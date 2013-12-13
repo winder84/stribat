@@ -1,0 +1,11 @@
+services:
+    sonata.admin.post:
+        class: Wdr\StroibatBundle\Admin\EtapiAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Content", label: "Этапы" }
+        arguments:
+            - ~
+            - Wdr\StroibatBundle\Entity\Etapi
+            - ~
+        calls:
+            - [ setTranslationDomain, [WdrStroibatBundle]]

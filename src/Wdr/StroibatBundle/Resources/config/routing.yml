@@ -1,0 +1,3 @@
+wdr_stroibat_homepage:
+    pattern:  /
+    defaults: { _controller: WdrStroibatBundle:Default:index }
