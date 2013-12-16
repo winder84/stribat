@@ -1,1 +1,99 @@
-Hello !
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+	<div class="content">
+		<div class="gr_header">
+			<div class="header_logo">
+				<img src="/bundles/wdrstroibat/images/header_logo.png" width="66" height="88">
+			</div>
+			<div class="header_title">
+				<h1>ГОРОДСКИЕ РЕМОНТЫ</h1>
+				<p>
+					Ремонты любой сложности,<br>
+					отделка, демонтаж
+				</p>
+			</div>
+			<div class="header_call">
+				<h1>
+					Звоните прямо сейчас:<br>
+					+7(928)349 82 25
+				</h1>
+					Или закажите звонок на свой телефон<br>
+					абсолютно бесплатно
+					<form method="post" class="header_form">
+						<label>Ваш телефон:</label>
+						<input type="text" name="call_number">
+						<button type="submit"></button>
+					</form>
+			</div>
+		</div>
+		<div class="sb_slider">
+			<div style="height: 300px; display: inline-block; margin-top: 20px;">
+				<img id="slider_1" src="/bundles/wdrstroibat/images/slider_1.png" height="290">
+				<img id="slider_2" src="/bundles/wdrstroibat/images/slider_2.png" style="display: none;">
+				<img id="slider_3" src="/bundles/wdrstroibat/images/slider_3.png" style="display: none;">
+				<img id="slider_4" src="/bundles/wdrstroibat/images/slider_4.png" style="display: none;">
+			</div>
+			{% for entity in slider %}
+				<p id="slider_text_{{ entity.id }}"  {% if entity.id != 1 %}style="display:none;"{% endif %}>
+					<a>{{ entity.title }}</a> - {{ entity.description }}
+				</p>
+			{% endfor %}
+			<div class="sb_slider_shadow"></div>
+		</div>
+		<div class="delimer"></div>
+		<div class="etapi">
+			<img class="main_etap" src="/bundles/wdrstroibat/images/4.png">
+			<p>этапа успешного ремонта</p>
+			<ul>
+				<li>
+					<img width="98" src="/bundles/wdrstroibat/images/etap_1.png">
+					<h1>ЭТАП 1: </h1>
+					<h2>{{ etapi[0].title }}</h2>
+					<p>{{ etapi[0].description }}</p>
+				</li>
+				<li>
+					<img width="209" src="/bundles/wdrstroibat/images/etap_2.png">
+					<h1>ЭТАП 2: </h1>
+					<h2>{{ etapi[1].title }}</h2>
+					<p>{{ etapi[1].description }}</p>
+				</li>
+				<li>
+					<img width="111" src="/bundles/wdrstroibat/images/etap_3.png">
+					<h1>ЭТАП 3: </h1>
+					<h2>{{ etapi[2].title }}</h2>
+					<p>{{ etapi[2].description }}</p>
+				</li>
+				<li>
+					<img width="112" src="/bundles/wdrstroibat/images/etap_4.png">
+					<h1>ЭТАП 4: </h1>
+					<h2>{{ etapi[3].title }}</h2>
+					<p>{{ etapi[3].description }}</p>
+				</li>
+			</ul>
+		</div>
+		<div class="delimer"></div>
+		<div class="problem">
+			<ul class="problem_main_ul">
+				<li>
+					<img src="/bundles/wdrstroibat/images/80.png">
+				</li>
+				<li style="font-size: 20px; color: red;">всех клиентов сталкиваются<br>со следующими проблемами</li>
+				<li style="margin-left: 240px; color: #0077a6; font-size: 22px;">МЫ РАБОТАЕМ ПО ДРУГОМУ</li>
+			</ul>
+			<ul class="problems">
+				<li style='background: url("/bundles/wdrstroibat/images/bad.png") no-repeat;'>{{ problems[0].description }}</li>
+				<li style='background: url("/bundles/wdrstroibat/images/bad.png") 0px -51px no-repeat;'>{{ problems[1].description }}</li>
+				<li style='background: url("/bundles/wdrstroibat/images/bad.png") 0px -112px no-repeat;'>{{ problems[2].description }}</li>
+				<li style='background: url("/bundles/wdrstroibat/images/bad.png") 0px -160px no-repeat;'>{{ problems[3].description }}</li>
+			</ul>
+			<ul class="no_problems">
+				<li style='background: url("/bundles/wdrstroibat/images/good.png") no-repeat;'>{{ problems[4].description }}</li>
+				<li style='background: url("/bundles/wdrstroibat/images/good.png") 0px -51px no-repeat;'>{{ problems[5].description }}</li>
+				<li style='background: url("/bundles/wdrstroibat/images/good.png") 0px -122px no-repeat;'>{{ problems[6].description }}</li>
+				<li style='background: url("/bundles/wdrstroibat/images/good.png") 0px -170px no-repeat;'>{{ problems[7].description }}</li>
+			</ul>
+		</div>
+		<div class="delimer"></div>
+	</div>
+{% endblock %}

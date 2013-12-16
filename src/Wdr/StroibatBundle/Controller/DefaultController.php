@@ -8,6 +8,15 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('WdrStroibatBundle:Default:index.html.twig');
+		$em = $this->getDoctrine()->getManager();
+		$aEtapi = $em->getRepository('WdrStroibatBundle:Etapi')->findAll();
+		$aSlider = $em->getRepository('WdrStroibatBundle:Slider')->findAll();
+		$aProblems = $em->getRepository('WdrStroibatBundle:Problems')->findAll();
+
+		return $this->render('WdrStroibatBundle:Default:index.html.twig', array(
+			'etapi' => $aEtapi,
+			'slider' => $aSlider,
+			'problems' => $aProblems,
+		));
     }
 }

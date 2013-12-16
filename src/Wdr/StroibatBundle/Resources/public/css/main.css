@@ -1,0 +1,211 @@
+body {
+	background: #ccc;
+}
+
+.content {
+	width: 1248px;
+	margin: 0 auto;
+	background: #fff;
+}
+
+.gr_header {
+	background: #0077a6;
+	padding: 10px 75px;
+}
+
+.header_logo {
+	display: inline-block;
+	margin-top: 22px;
+}
+
+.header_title {
+	display: inline-block;
+	color: #fff;
+	padding: 10px;
+	vertical-align: top;
+	margin-top: 24px;
+}
+
+.header_title h1, .header_call h1 {
+	font-family: Tahoma;
+	margin-top: 0;
+	font-size: 20px;
+}
+
+.header_title p {
+	font-family: Arial;
+	font-size: 16px;
+}
+
+.header_call {
+	font-family: Tahoma;
+	display: inline-block;
+	color: #fff;
+	vertical-align: top;
+	margin: 0 0 0 380px;
+}
+
+.header_form {
+	margin-top: 10px;
+}
+
+.header_form label {
+	vertical-align: top;
+}
+
+.header_form input {
+	border-radius: 5px;
+	border: 1px #fff groove;
+	font-family: Tahoma;
+	font-size: 14px;
+	vertical-align: top;
+}
+
+.header_form button {
+	border: none;
+	width: 50px;
+	height: 50px;
+	background: url("../images/button_phone.png") no-repeat;
+}
+
+.sb_slider {
+	padding: 10px 200px;
+}
+
+.sb_slider img {
+	display: inline-block;
+	width: 350px;
+	margin-right: 20px;
+}
+
+.sb_slider p {
+	display: inline-block;
+	width: 450px;
+	vertical-align: top;
+	margin-top: 80px;
+	font-size: 14px;
+	font-family: Tahoma;
+	line-height: 20px;
+}
+
+.sb_slider p a {
+	color: #0077a6;
+	font-size: 20px;
+	font-weight: bold;
+	vertical-align: top;
+}
+
+.sb_slider_shadow {
+	width: 980px;
+	height: 14px;
+	margin-left: -80px;
+	background: url("../images/slider_shadow.png") no-repeat;
+}
+
+.delimer {
+	height: 2px;
+	width: 100%;
+	background: url("../images/delimer.png") repeat-x;
+}
+
+.etapi, .problem {
+	padding: 20px 75px;
+}
+
+.etapi .main_etap {
+	display: inline-block;
+	width: 61px;
+	height: 61px;
+	margin-right: 10px;
+}
+
+.etapi p {
+	display: inline-block;
+	font-family: Tahoma;
+	font-size: 20px;
+	color: #0077a6;
+	vertical-align: top;
+}
+
+.etapi ul li {
+	width: 230px;
+	display: inline-block;
+	font-family: Tahoma;
+	line-height: 18px;
+	margin: 10px;
+}
+
+.etapi ul li img {
+	list-style: none;
+	margin: 0 auto;
+	display: block;
+}
+
+.etapi ul li h1 {
+	font-size: 18px;
+	vertical-align: bottom;
+	color: #0077a6;
+	text-align: center;
+}
+
+.etapi ul li h2 {
+	font-size: 14px;
+	color: #0077a6;
+	margin: 0;
+	text-align: center;
+}
+
+.etapi ul li p {
+	line-height: 14px;
+	font-size: 14px;
+	color: #000;
+	text-align: center;
+}
+
+.problem ul {
+	list-style: none;
+	font-family: Tahoma;
+}
+
+.problem_main_ul {
+	padding: 0;
+	margin: 10px 0 0 0;
+}
+
+.problem_main_ul li {
+	padding: 10px 10px 10px 0;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.problems {
+	margin: 0 0 0 70px;
+	font-family: Tahoma;
+	color: #333;
+	display: inline-block;
+}
+
+.problems li {
+	padding-left: 45px;
+	margin: 20px 0 0 0;
+	min-height: 33px;
+	vertical-align: top;
+	padding-top: 5px;
+	width: 380px;
+}
+
+.no_problems {
+	margin: 0 0 0 45px;
+	font-family: Tahoma;
+	color: #333;
+	display: inline-block;
+}
+
+.no_problems li {
+	padding-left: 45px;
+	margin: 20px 0 0 0;
+	min-height: 35px;
+	vertical-align: top;
+	padding-top: 5px;
+	width: 380px;
+}

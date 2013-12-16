@@ -3,19 +3,16 @@
 namespace Wdr\StroibatBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Symfony\Component\Validator\Constraints as Assert;
-use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 /**
- * Etapi
+ * Slider
  *
  * @ORM\Table()
  * @ORM\Entity
  */
-class Etapi
+class Slider
 {
-
-	/**
+    /**
      * @var integer
      *
      * @ORM\Column(name="id", type="integer")
@@ -24,9 +21,9 @@ class Etapi
      */
     private $id;
 
+
 	/**
 	 * @ORM\Column(type="string", length=255)
-	 * @Assert\NotBlank
 	 */
 	public $title;
 
@@ -34,7 +31,6 @@ class Etapi
 	 * @ORM\Column(type="text")
 	 */
 	protected $description;
-
 
     /**
      * Get id
@@ -50,7 +46,7 @@ class Etapi
      * Set title
      *
      * @param string $title
-     * @return Etapi
+     * @return Slider
      */
     public function setTitle($title)
     {
@@ -73,7 +69,7 @@ class Etapi
      * Set description
      *
      * @param string $description
-     * @return Etapi
+     * @return Slider
      */
     public function setDescription($description)
     {

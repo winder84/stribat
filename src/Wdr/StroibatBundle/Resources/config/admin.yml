@@ -1,11 +1,33 @@
 services:
-    sonata.admin.post:
+    sonata.admin.slider:
+        class: Wdr\StroibatBundle\Admin\SliderAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Content", label: "Слайдер" }
+        arguments:
+            - ~
+            - Wdr\StroibatBundle\Entity\Slider
+            - ~
+        calls:
+            - [ setTranslationDomain, [WdrStroibatBundle]]
+
+    sonata.admin.etapi:
         class: Wdr\StroibatBundle\Admin\EtapiAdmin
         tags:
             - { name: sonata.admin, manager_type: orm, group: "Content", label: "Этапы" }
         arguments:
             - ~
             - Wdr\StroibatBundle\Entity\Etapi
+            - ~
+        calls:
+            - [ setTranslationDomain, [WdrStroibatBundle]]
+
+    sonata.admin.problems:
+        class: Wdr\StroibatBundle\Admin\ProblemsAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Content", label: "Проблемы" }
+        arguments:
+            - ~
+            - Wdr\StroibatBundle\Entity\Problems
             - ~
         calls:
             - [ setTranslationDomain, [WdrStroibatBundle]]
