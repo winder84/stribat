@@ -209,3 +209,14 @@ body {
 	padding-top: 5px;
 	width: 380px;
 }
+
+.d3d {
+	width: 1025px;
+	height: 280px;
+	background: url("../images/3dzag.png") repeat-x;
+	margin: 20px 0 0 80px;
+  }
+
+.feedback {
+	margin: 15px 0 0 90px;
+}

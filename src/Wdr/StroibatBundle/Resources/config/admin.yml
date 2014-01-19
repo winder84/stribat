@@ -31,3 +31,14 @@ services:
             - ~
         calls:
             - [ setTranslationDomain, [WdrStroibatBundle]]
+
+    sonata.admin.feedback:
+        class: Wdr\StroibatBundle\Admin\FeedbackAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Content", label: "Отзывы" }
+        arguments:
+            - ~
+            - Wdr\StroibatBundle\Entity\Feedback
+            - ~
+        calls:
+            - [ setTranslationDomain, [WdrStroibatBundle]]
