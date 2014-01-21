@@ -106,7 +106,57 @@
 				</li>
 				<li style="margin: 20px 0 0 10px; color: #0077a6; font-size: 22px;">примеры работ и отзывы клиентов</li>
 			</ul>
-
+			<ul class="feedback_items">
+				{% for feedback in feedbacks %}
+				<li>
+					<img width="276" height="193" src="/uploads/images/{{ feedback.path }}">
+					<p style="margin: 0 0 10px 0; font-family: Tahoma; font-size: 14px; color: #333;">
+						Отзыв клиента:<br />
+						<span style="color: #000;">"{{ feedback.description }}"</span>
+						<br />
+						<br />
+						{{ feedback.title }}
+					</p>
+				</li>
+				{% endfor %}
+			</ul>
+		</div>
+		<div class="delimer"></div>
+		<div class="zamershik">
+			<ul class="problem_main_ul">
+				<li>
+					<img src="/bundles/wdrstroibat/images/zam_icon.png">
+				</li>
+				<li style="margin: 20px 0 0 -30px; color: darkorange; font-size: 22px;">вызов замерщика</li>
+			</ul>
+			<table>
+				<tr>
+					<form action="#" method="post">
+						<td>
+							<label>Ф.И.О:</label><br />
+							<input type="text" name="fio" value=""><br />
+							<label>email:</label><br />
+							<input type="text" name="email" value=""><br />
+							<label>Контактный телефон:</label><br />
+							<input type="text" name="phone" value=""><br />
+						</td>
+						<td style="padding: 30px 0 0 30px;">
+							<label>для примечаний:</label><br />
+							<textarea name="text"></textarea>
+						</td>
+					</form>
+				</tr>
+			</table>
+		</div>
+		<div class="delimer"></div>
+		<div class="sertificates">
+			<ul class="problem_main_ul">
+				<li>
+					<img src="/bundles/wdrstroibat/images/serts.png">
+				</li>
+				<li style="margin: 20px 0 0 10px; color: #fff; font-size: 22px;">сертификаты</li>
+			</ul>
+			<div class="serts_images"></div>
 		</div>
 	</div>
 {% endblock %}

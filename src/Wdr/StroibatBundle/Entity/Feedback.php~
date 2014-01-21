@@ -220,4 +220,24 @@ class Feedback
 		// when displaying uploaded doc/image in the view.
 		return 'uploads/images';
 	}
+
+	/**
+	 * Sets file.
+	 *
+	 * @param \Symfony\Component\HttpFoundation\File\UploadedFile $file
+	 */
+	public function setFile(\Symfony\Component\HttpFoundation\File\UploadedFile $file = null)
+	{
+		$this->file = $file;
+	}
+
+	/**
+	 * Get file.
+	 *
+	 * @return UploadedFile
+	 */
+	public function getFile()
+	{
+		return $this->file;
+	}
 }

@@ -220,3 +220,59 @@ body {
 .feedback {
 	margin: 15px 0 0 90px;
 }
+
+.feedback_items {
+	list-style: none;
+	margin: 0 0 0 30px;
+}
+
+.feedback_items li {
+	display: inline-block;
+	max-width: 280px;
+	vertical-align: top;
+}
+
+.zamershik {
+	margin: 15px 0 0 90px;
+	height: 450px;
+	background: url("../images/zamershik.png") 350px 20px no-repeat;
+}
+
+.zamershik table {
+	margin: 50px 0 0 70px;
+	color: #333;
+}
+
+.zamershik table input {
+	margin: 10px;
+	border: 1px grey #ccc;
+	border-radius: 5px;
+	height: 26px;
+	width: 220px;
+}
+
+.zamershik table textarea {
+	width: 220px;
+	height: 140px;
+	border: 1px #ccc groove;
+	border-radius: 5px;
+	resize: none;
+}
+
+.sertificates {
+	background: #0077a6;
+	height: 320px;
+}
+
+.sertificates ul {
+	margin: 0;
+	margin: 0 0 0 80px;
+	padding-top: 20px;
+}
+
+.serts_images {
+	background: url("../images/serts_images.png") no-repeat;
+	width: 850px;
+	height: 171px;
+	margin: 0 0 0 170px;
+}

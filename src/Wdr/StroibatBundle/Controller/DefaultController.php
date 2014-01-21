@@ -12,11 +12,13 @@ class DefaultController extends Controller
 		$aEtapi = $em->getRepository('WdrStroibatBundle:Etapi')->findAll();
 		$aSlider = $em->getRepository('WdrStroibatBundle:Slider')->findAll();
 		$aProblems = $em->getRepository('WdrStroibatBundle:Problems')->findAll();
+		$aFeedbacks = $em->getRepository('WdrStroibatBundle:Feedback')->findAll();
 
 		return $this->render('WdrStroibatBundle:Default:index.html.twig', array(
 			'etapi' => $aEtapi,
 			'slider' => $aSlider,
 			'problems' => $aProblems,
+			'feedbacks' => $aFeedbacks,
 		));
     }
 }
